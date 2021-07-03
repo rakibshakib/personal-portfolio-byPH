@@ -1,62 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
-h1{
-    font-size: 50px; 
+
+h1 {
+    font-size: 50px;
 }
-.banner{
+
+.banner {
     background-image: url(../img/top-banner.png);
     background-repeat: no-repeat;
 }
-.dream-section{
+
+.dream-section {
     background-image: url(../img/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
-    margin-top:40px;
+    margin-top: 40px;
 }
+.experience-section{
+    background-image: url(../img/exp-bg.png);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+
 .top-banner,
-.dream-big{
-    border: 1px solid black;
+.dream-big,
+.experience-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85%;
     margin: auto;
 }
+
 .top-banner-content,
-.dream-big-content{ 
+.dream-big-content {
     padding: 20px;
     width: 50vw;
 }
-.my__name{
+
+.my__name {
     color: orange;
 }
+
 .top-banner-content p,
-.dream-big-content p{
-    line-height:25px; 
+.dream-big-content p,
+.full-stack p,
+.baby-stack p {
+    line-height: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
     color: gray;
 }
+
 .top-banner-images,
-.dream-big-image{
+.dream-big-image {
     padding: 10px 20px;
     width: 30vw;
 }
+
 .top-banner-images img,
-.dream-big-image img{
+.dream-big-image img {
     width: 100%;
 }
-.link-btn{
+
+.link-btn {
     text-decoration: none;
     padding: 10px 35px;
     background-image: linear-gradient(90deg, salmon, tomato);
     border-radius: 8px;
     font-weight: 700;
     color: white;
+}
+
+.experience>h1 {
+    margin-left: 150px;
+    font-size: 35px;
+}
+
+.full-stack,
+.baby-stack {
+    width: 35vw;
+    border-radius: 10px;
+    height: 300px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.full-stack h3,
+.baby-stack h3{
+    color: orange;
+}
+.full-stack{
+    border-image: linear-gradient(blue, cyan); 
+    border-left: 7px solid;
+    border-image-slice: 1;
+}
+.baby-stack{
+    border-image: linear-gradient(salmon, tomato); 
+    border-left: 7px solid;
+    border-image-slice: 1;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    margin: 20px 0;
 }
