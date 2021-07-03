@@ -24,7 +24,8 @@ h1 {
     background-position: right;
     margin-top: 40px;
 }
-.experience-section{
+
+.experience-section {
     background-image: url(../img/exp-bg.png);
     background-repeat: no-repeat;
     margin-top: 40px;
@@ -89,23 +90,25 @@ h1 {
 .baby-stack {
     width: 35vw;
     border-radius: 10px;
-    height: 300px;
+    height: 350px;
     padding: 10px 20px;
     margin: 10px 20px;
     box-shadow: 5px 5px 15px gray;
 }
 
 .full-stack h3,
-.baby-stack h3{
+.baby-stack h3 {
     color: orange;
 }
-.full-stack{
-    border-image: linear-gradient(blue, cyan); 
+
+.full-stack {
+    border-image: linear-gradient(blue, cyan);
     border-left: 7px solid;
     border-image-slice: 1;
 }
-.baby-stack{
-    border-image: linear-gradient(salmon, tomato); 
+
+.baby-stack {
+    border-image: linear-gradient(salmon, tomato);
     border-left: 7px solid;
     border-image-slice: 1;
 }
@@ -116,3 +119,96 @@ footer {
     color: gray;
     margin: 20px 0;
 }
+
+@media (max-width: 425px) {
+
+    .top-banner,
+    .dream-big,
+    .experience-details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5px;
+        border-bottom: 2px dotted gray;
+    }
+
+    .top-banner-images,
+    .dream-big-image {
+        padding: 10px;
+        width: 300px;
+    }
+
+    .top-banner-content,
+    .dream-big-content {
+        padding: 5px;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .top-banner-content p,
+    .dream-big-content p,
+    .full-stack p,
+    .baby-stack p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .experience>h1 {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .full-stack,
+    .baby-stack {
+        width: 200px;
+        border-radius: 5px;
+        height: 400px;
+        padding: 10px;
+        margin: 7px 10px;
+    }
+
+}
+
+
+@media (min-width: 425.01px) and (max-width: 1024px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .top-banner-images,
+    .dream-big-image {
+        padding: 20px;
+        width: 350px;
+    }
+    .experience>h1 {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .full-stack,
+    .baby-stack {
+        width: 300px;
+        border-radius: 5px;
+        height: 450px;
+        padding: 10px;
+        margin: 7px 15px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
