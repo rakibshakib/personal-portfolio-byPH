@@ -13,7 +13,14 @@ h1{
     background-image: url(../img/top-banner.png);
     background-repeat: no-repeat;
 }
-.top-banner{
+.dream-section{
+    background-image: url(../img/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top:40px;
+}
+.top-banner,
+.dream-big{
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -21,30 +28,34 @@ h1{
     width: 85%;
     margin: auto;
 }
-.top-banner-content{ 
-    padding: 10px 20px;
+.top-banner-content,
+.dream-big-content{ 
+    padding: 20px;
     width: 50vw;
 }
 .my__name{
     color: orange;
 }
-.top-banner-content p{
+.top-banner-content p,
+.dream-big-content p{
     line-height:25px; 
     margin-top: 10px;
     margin-bottom: 20px;
     color: gray;
 }
-.top-banner-images{
+.top-banner-images,
+.dream-big-image{
     padding: 10px 20px;
     width: 30vw;
 }
-.top-banner-images img{
+.top-banner-images img,
+.dream-big-image img{
     width: 100%;
 }
 .link-btn{
     text-decoration: none;
     padding: 10px 35px;
-    background-image: linear-gradient(90deg, orange, tomato);
+    background-image: linear-gradient(90deg, salmon, tomato);
     border-radius: 8px;
     font-weight: 700;
     color: white;
